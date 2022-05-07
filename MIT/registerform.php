@@ -19,14 +19,14 @@ $db->select_db("$dbname");
 
     $result = $db->query($sql1);
 
-    if ($result->num_rows == 0) {
+    //if ($result->num_rows == 0) {
     $sql2="INSERT INTO Worker
     (Name,PhoneNumber,password,BinM,BinAd)
     VALUES ('$username','$pn','$password',0,0)";
 
     $db->query($sql2);
 
-    }
+    //}
 
    header("location:loginform.php");
 

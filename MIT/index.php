@@ -76,7 +76,7 @@ $ses=$_SESSION['username'];
                         <a class="nav-link dropdown-toggle" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Warehouses</a>
                         <ul class="dropdown-menu" aria-labelledby="dropdown01">
                         <?php
-                            $sql = "SELECT * FROM Warehouse ";
+                           $sql = "SELECT * FROM Warehouse ";
                             $result = $db->query($sql);
                             if (isset($_SESSION['username'])){
                                 if ($result->num_rows > 0) {
@@ -92,7 +92,7 @@ $ses=$_SESSION['username'];
                                     }
                             }
                             else echo '<a class="dropdown-item" href="loginform.php">Login to see warehouses</a></li>';
-                        ?>
+                        ?> 
 
                         </ul>
                     </li>
@@ -178,7 +178,7 @@ $ses=$_SESSION['username'];
 
 
 
-    <div class='modal fade' id= 'modalung' tabindex='-1' aria-labelledby='exampleModalLabel' aria-hidden='true'>
+    <div class='modal fade' id= 'modalung1' tabindex='-1' aria-labelledby='exampleModalLabel' aria-hidden='true'>
   <div class='modal-dialog'>
     <div class='modal-content'>
       <div class='modal-header'>
